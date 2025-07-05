@@ -17,7 +17,8 @@ import {
   Clock, 
   CheckCircle2, 
   XCircle,
-  Loader2
+  Loader2,
+  DollarSign
 } from 'lucide-react';
 import { Reward, UserReward } from '@/types';
 
@@ -90,7 +91,7 @@ const RewardCard = ({
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer"
                 >
                   <RadioGroupItem value="paypal" id="paypal" className="sr-only" />
-                  <img src="/placeholder.svg" alt="PayPal" className="mb-3 h-8 w-8" />
+                  <DollarSign className="mb-3 h-8 w-8 text-blue-600" />
                   <span className="text-sm font-medium">PayPal</span>
                 </Label>
                 <Label
@@ -98,7 +99,7 @@ const RewardCard = ({
                   className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer"
                 >
                   <RadioGroupItem value="bank" id="bank" className="sr-only" />
-                  <img src="/placeholder.svg" alt="Bank Transfer" className="mb-3 h-8 w-8" />
+                  <CreditCard className="mb-3 h-8 w-8 text-green-600" />
                   <span className="text-sm font-medium">تحويل بنكي</span>
                 </Label>
               </RadioGroup>
@@ -299,5 +300,7 @@ const Rewards = () => {
     </DashboardLayout>
   );
 };
+
+export default Rewards;
 
 export default Rewards;
