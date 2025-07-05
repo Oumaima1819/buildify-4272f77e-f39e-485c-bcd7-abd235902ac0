@@ -302,5 +302,3 @@ const Rewards = () => {
 };
 
 export default Rewards;
-
-export default Rewards;
